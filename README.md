@@ -19,8 +19,8 @@ This site include the required 3 section, and also added some adjustment and add
 
 ### Technologies Used
 1. **Semantic, Indentation, and Comments**
-  I try to type the code as neat as possible. I used these tags as an initial structure and developed the page from there.
-  I also marking the codes with comments, and utilized the indentation, for an easily code troubleshooting.
+  * I try to type the code as neat as possible. I used these tags as an initial structure and developed the page from there.
+  * I also marking the codes with comments, and utilized the indentation, for an easily code troubleshooting.
   ```
   <html>
   <head>
@@ -59,7 +59,7 @@ This site include the required 3 section, and also added some adjustment and add
   * I used the checkbox *type* on the *input* tag for the 'Prefered Contact Method'.
   * I used the file *type* on the *input* tag for the 'Upload File' part.
   * I used two *button* tags with the *submit* and *reset* *type* of attribute each for 'Submit' and 'Reset' button.
-  * Also this section used the *class* attribute to make it left-aligned.
+  * Also this section used the *fieldset* with the *class* attribute to coverage the whole form and make it left-aligned.
 6. **Others**
   * I added my Name and Date at the end of the page.
   * I used *div* tag to put the *class* attribute for center-aligned the *body* section.
