@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>= ADAM CV =</title>
+<!--CSS-->
+    <style>
+        .center-text{text-align: center;}
+        .left-text{text-align: left;}
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Vertically centers if nav has height */
+            }
+        body {width: 480px;}
+    </style>
+</head>
+<body>
+<!--div align center-->
+<div class="center-text">
+<!--Home Section-->
+<header>
+    <section id="Home">
+        <h1>Welcome to my Online CV</h1>
+        <nav>
+            <table border="0">
+                <tr>
+                    <th><a href="#Home" >Home</a></th>
+                    <th><a href="#About Me">About</a></th>
+                    <th><a href="#Portofolio">Portofolio</a></th>
+                    <th><a href="#Contact">Contact</a></th>
+                </tr>
+            </table>
+        </nav>
+    </section>
+</header>
+<hr>
+<!--About Me Section-->
+<main>
+    <section id="About Me">
+        <h2>Hello friends, you can call me Adam!!</h2>
+        <p>Hi, my name is Christopher Adam Pandawa. I graduated from Bina Nusantara University, Majoring in Computer Engineering, and focusing in Robotics and Automation. I was graduated from Bina Nusantara University in 2007, with GPA of 3.36.</p>
+        <p>I like all about Technologies, I like watching Japanese Anime, and I like Photography/Videography.</p>
+        <p>I work as IT/Hardware Engineer, I usually handles Servers and IT Devices, Like Storage or San Switch. I do the Hardware Parts Replacements, and Fixing the Hardware Configuration. I'm currently looking for a Job, and attending a Full Stack Course in RevoU. </p>
+        <p>If you have a question or anything, feel free to <a href="#Contact">contact me.</a></p>
+            <nav>
+                <a href="#top" >Back to top</a>
+            </nav>
+    </section>
+<hr>
+<!--Work Experience Section-->
+    <section id="Portofolio">
+        <h2>Work Experiences</h2>
+        <ol class="left-text">
+            <li><h3>PT Fortuna Informatika Nusantara - IT Support</h3>
+                <p>My first job was in PT Fortuna Informatika Nusantara. As an IT Support for Internal. I Managed the company laptop, installing the softwares, antivirus, managing E-Mail Server, Printer, Configuring the user network access with Mikrotik's Firewall, Configuring Network Switchs, and managing all other IT devices like CCTV, UPS, and PABX.</p>
+            <li><h3>PT IBM-Jasa Teknologi Informasi - Service Engineer</h3>
+                <p>I have a long experience as a Service Engineer in PT IBM-JTI, a sister company of IBM Indonesia. I'll go onsite on IBM's Customer's Site, all over Indonesia, fixing their IBM Products. Such as Servers, Storage, Tape Library, and SAN Switch.</p>
+            <li><h3>PT Klik Digital Sinergi - Service Engineer L2</h3>
+                <p>I also have experience on PT Klik Digital Sinergi, a Vendor for PT Telkomsel, as a Level 2 Service Engineer. I managed all the IT devices inside their Data Center in Jakarta and Serpong. Such as Servers, Storage, Tape Library and San Switch from various Brands. I also do the Preventive Maintenance on all of their devices on a three-monthly basis, Create the report, and presentation, and then scheduled a repair if needed.</p>
+            <li><h3>PT Gemilang Selaras Teknologi - Data Center Operation</h3>
+                <p>My last job was in Cikarang, as a Data Center Operation / Server Engineer in PT Gemilang Selaras Teknologi. A Vendor for PT Megaspeed Intl. a chinese based Company that provides an AI based Cloud service for Alibaba.</p>
+        </li></ol>
+            <nav>
+                <a href="#top" >Back to top</a>
+            </nav>
+    </section>
+<hr>
+<!--Contact Me Section-->
+    <section id="Contact">
+        <h2>Contact Me</h2>
+        <p>Hi, Please drop your question, Job Offer, Collaboration, or anything you want to say through this form:</p>
+<!--This form is left align-->
+            <fieldset class="left-text">
+                <form>
+<!--Name-->
+                    <label for="namex">Name</label>
+                        <br />
+                    <input
+                        id="namex"
+                        required
+                        name="name"
+                        type="text"
+                        placeholder="Masukan Nama Anda"
+                        />
+                        <br />
+<!--E-Mail-->
+                    <label for="emailx">Email</label>
+                        <br />
+                    <input
+                        id="emailx"
+                        required
+                        name="email"
+                        type="email"
+                        placeholder="email@ggg.com"
+                        />
+                        <br />
+<!--select-->
+                    <label for="reasonx">Reason for Contact</label>
+                        <br />
+                    <select id="reasonx" name="reason">
+                        <option disabled selected hidden>--please select a reason--</option>
+                        <optgroup label="Give Me Message">
+                        <option>I Have a Question</option>
+                        <option>I Have Suggestion</option>
+                        </optgroup>
+                        <optgroup label="Give Me a Job Offers">
+                        <option>IT Support/Engineer Work</option>
+                        <option>Photography/Videography</option>
+                        <option>Collaboration Offers</option>
+                        </optgroup>
+                    </select>
+                        <br />
+<!--checkbox-->
+                    <label>Preferred Contact Method</label>
+                        <br />
+                    <input
+                        id="promox"                        
+                        name="opsi"
+                        type="checkbox"                    
+                        value="p-romotion"
+                        />
+                    <label for="promox">E-Mail</label>
+                    <input
+                        id="offerx"                        
+                        name="opsi"
+                        type="checkbox"                    
+                        value="o-fferings"
+                        />
+                    <label for="offerx">Whatsapp</label>
+                        <br />
+<!--upload file-->
+                    <label for="filex">Upload File</label><br />
+                    <input
+                        id="filex"       
+                        name="file"
+                        type="file"
+                        /><br />
+<!--pesan-->
+                    <label for="pesanx">Messages</label>
+                        <br />
+                    <textarea
+                        id="pesanx"
+                        required
+                        name="pesan"
+                        cols="50"
+                        rows="5"
+                        placeholder="Write your messages here.."></textarea>
+                    </textarea>
+                        <br />
+<!--button-->
+                    <button type="submit">
+                        Submit
+                    </button>
+                    <button type="reset">
+                        Reset
+                    </button>
+                        <br />
+                </form>
+            </fieldset>
+            <nav>
+                <a href="#top" >Back to top</a>
+            </nav>
+    </section>
+<hr>
+</main>
+<!--Footer Nav-->
+<footer>
+    <nav >
+        <table border="0">
+            <tr>
+                <th><a href="#Home" >Home</a></th>
+                <th><a href="#About Me">About</a></th>
+                <th><a href="#Portofolio">Portofolio</a></th>
+                <th><a href="#Contact">Contact</a></th>
+            </tr>
+        </table>
+    </nav>
+    <br />
+    <div><i>-06 March 2026-</i></div>
+    <div><i>-Christopher Adam Pandawa-</i></div>
+</footer>
+</div>
+</body>
+</html>
