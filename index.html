@@ -4,51 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>= ADAM CV =</title>
+<!--using tailwind and google font-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <!--CSS-->
     <style>
-        .center-text{text-align: center;}
+        html {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+        body {
+            display: flex;
+            margin: 10px;
+            flex-direction: column;
+            font-family: "Montserrat", sans-serif;
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background-color: lightblue;
+            background-image: url(jigsaw.svg);
+            background-repeat: repeat;
+            background-size: 50px 50px;
+            background-blend-mode: overlay;
+        }
         .left-text{text-align: left;}
+        h1, h2, h3 {
+            font-weight: bold;
+            color: darkgoldenrod;
+        }
+        h1 {font-size: 3em;}
+        h2 {font-size: 2em;}
+        h3 {font-size: 1.5em;}
+        
         nav {
             display: flex;
             justify-content: center;
+            color: brown;
+            font-weight: bold;
             align-items: center; /* Vertically centers if nav has height */
             }
-        body {width: 480px;}
+        nav a:hover {
+            color: purple;
+            font-weight: bolder;
+            transition: color 0.5s ease;
+        }
+
+        ol {
+            padding-left: 1rem;
+            list-style: square;
+        }
+
+        li::marker {
+            color: darkblue;
+            font-size: 1.5em;
+        }
+
+        section#Contact fieldset {
+            border: 2px solid darkblue;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: lightseagreen;
+        }
+        input, select, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            background-color: darkblue;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        }
+        label {
+            font-weight: bold;
+            color: brown;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 <body>
-<!--div align center-->
-<div class="center-text">
 <!--Home Section-->
 <header>
     <section id="Home">
         <h1>Welcome to my Online CV</h1>
-        <nav>
-            <table border="0">
-                <tr>
-                    <th><a href="#Home" >Home</a></th>
-                    <th><a href="#About-Me">About</a></th>
-                    <th><a href="#Portofolio">Portofolio</a></th>
-                    <th><a href="#Contact">Contact</a></th>
-                </tr>
-            </table>
+        <nav class="flex justify-center gap-4">
+            <a href="#Home" >Home</a>
+            <a href="#About-Me">About</a>
+            <a href="#Portofolio">Portofolio</a>
+            <a href="#Contact">Contact</a>
         </nav>
     </section>
 </header>
-<hr>
 <!--About Me Section-->
 <main>
+<hr />
     <section id="About-Me">
         <h2>Hello friends, you can call me Adam!!</h2>
+        <div style="width: 100px; aspect-ratio: 1/1; overflow: hidden; border-radius: 50%; margin: 20px 0; ">
+        <img src="poto.jpg" alt="adam" style="transform: translateY(-15px);">
+        </div>
         <p>Hi, my name is Christopher Adam Pandawa. I graduated from Bina Nusantara University, Majoring in Computer Engineering, and focusing in Robotics and Automation. I was graduated from Bina Nusantara University in 2007, with GPA of 3.36.</p>
         <p>I like all about Technologies, I like watching Japanese Anime, and I like Photography/Videography.</p>
         <p>I work as IT/Hardware Engineer, I usually handles Servers and IT Devices, Like Storage or San Switch. I do the Hardware Parts Replacements, and Fixing the Hardware Configuration. I'm currently looking for a Job, and attending a Full Stack Course in RevoU. </p>
         <p>If you have a question or anything, feel free to <a href="#Contact">contact me.</a></p>
             <nav>
-                <a href="#top" >Back to top</a>
+                <a href="#Home" >Back to top</a>
             </nav>
     </section>
-<hr>
+<hr />
 <!--Work Experience Section-->
     <section id="Portofolio">
         <h2>Work Experiences</h2>
@@ -65,17 +162,16 @@
             <li><h3>PT Gemilang Selaras Teknologi - Data Center Operation</h3>
                 <p>My last job was in Cikarang, as a Data Center Operation / Server Engineer in PT Gemilang Selaras Teknologi. A Vendor for PT Megaspeed Intl. a chinese based Company that provides an AI based Cloud service for Alibaba.</p>
             </li>
-            </li>
         </ol>
             <nav>
-                <a href="#top" >Back to top</a>
+                <a href="#Home" >Back to top</a>
             </nav>
     </section>
-<hr>
+<hr />
 <!--Contact Me Section-->
     <section id="Contact">
         <h2>Contact Me</h2>
-        <p>Hi, Please drop your question, Job Offer, Collaboration, or anything you want to say through this form:</p>
+        <p class="left-text">Hi, Please drop your question, Job Offer, Collaboration, or anything you want to say through this form:</p>
 <!--This form is left align-->
             <fieldset class="left-text">
                 <form>
@@ -120,20 +216,22 @@
 <!--checkbox-->
                     <label>Preferred Contact Method</label>
                         <br />
-                    <input
-                        id="emailcheckx"                        
-                        name="opsi"
-                        type="checkbox"                    
-                        value="emailcheck"
-                        />
-                    <label for="emailcheckx">E-Mail</label>
-                    <input
-                        id="whatsappx"                        
-                        name="opsi"
-                        type="checkbox"                    
-                        value="whatsapps"
-                        />
-                    <label for="whatsappx">Whatsapp</label>
+                        <div>
+                            <input
+                                id="emailcheckx"                        
+                                name="opsi"
+                                type="checkbox"                    
+                                value="emailcheck"
+                                />
+                            <label for="emailcheckx">E-Mail</label>
+                            <input
+                                id="whatsappx"                        
+                                name="opsi"
+                                type="checkbox"                    
+                                value="whatsapps"
+                                />
+                            <label for="whatsappx">Whatsapp</label>
+                        </div>
                         <br />
 <!--upload file-->
                     <label for="filex">Upload File</label><br />
@@ -164,27 +262,22 @@
                 </form>
             </fieldset>
             <nav>
-                <a href="#top" >Back to top</a>
+                <a href="#Home" >Back to top</a>
             </nav>
     </section>
-<hr>
+<hr />
 </main>
 <!--Footer Nav-->
 <footer>
-    <nav >
-        <table border="0">
-            <tr>
-                <th><a href="#Home" >Home</a></th>
-                <th><a href="#About-Me">About</a></th>
-                <th><a href="#Portofolio">Portofolio</a></th>
-                <th><a href="#Contact">Contact</a></th>
-            </tr>
-        </table>
-    </nav>
+    <nav class="flex justify-center gap-4">
+            <a href="#Home" >Home</a>
+            <a href="#About-Me">About</a>
+            <a href="#Portofolio">Portofolio</a>
+            <a href="#Contact">Contact</a>
+        </nav>
     <br />
     <div><i>-06 March 2026-</i></div>
     <div><i>-Christopher Adam Pandawa-</i></div>
 </footer>
-</div>
 </body>
 </html>
