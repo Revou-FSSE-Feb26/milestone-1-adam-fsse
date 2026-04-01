@@ -5,310 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>= ADAM CV =</title>
 <!--using tailwind and google font-->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <link rel="stylesheet" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <!--CSS-->
-    <style>
-        html {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 10px;
-        }
-        body {
-            display: flex;
-            margin: 10px;
-            flex-direction: column;
-            font-family: "Montserrat", sans-serif;
-            max-width: 1200px;
-            width: 100%;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            background-color: lightblue;
-            background-image: url(jigsaw.svg);
-            background-repeat: repeat;
-            background-size: 50px 50px;
-            background-blend-mode: overlay;
-        }
-        .left-text{text-align: left;}
-        h1, h2, h3 {
-            font-weight: bold;
-            color: darkgoldenrod;
-        }
-        h1 {font-size: 3em;}
-        h2 {font-size: 2em;}
-        h3 {font-size: 1.5em;}
-        
-        nav {
-            display: flex;
-            justify-content: center;
-            color: brown;
-            font-weight: bold;
-            align-items: center; /* Vertically centers if nav has height */
-            }
-        nav a:hover {
-            color: purple;
-            font-weight: bolder;
-            transition: color 0.5s ease;
-        }
-
-        ol {
-            padding-left: 1rem;
-            list-style: square;
-        }
-
-        li::marker {
-            color: darkblue;
-            font-size: 1.5em;
-        }
-
-        section#Contact fieldset {
-            border: 2px solid darkblue;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: lightseagreen;
-        }
-        input, select, textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-        button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 50px;
-            background-color: darkblue;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        input[type="checkbox"] {
-            width: 20px;
-            height: 20px;
-        }
-        label {
-            font-weight: bold;
-            color: brown;
-        }
-
-        @media screen and (max-width: 480px) {
-            body {
-                font-size: 14px;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
-            h3 {
-                font-size: 1.2rem;
-            }
-        }
-
-        @media screen and (max-width: 1024px) and (min-width: 481px) {
-            body {
-                font-size: 16px;
-            }
-            h1 {
-                font-size: 2.2rem;
-            }
-            h2 {
-                font-size: 1.8rem;
-            }
-            h3 {
-                font-size: 1.4rem;
-            }
-        }
-
-        @media screen and (min-width: 1025px) {
-            body {
-                font-size: 18px;
-            }
-            h1 {
-                font-size: 2.5rem;
-            }
-            h2 {
-                font-size: 2.2rem;
-            }
-            h3 {
-                font-size: 1.7rem;
-            }
-        }
-    </style>
+    
 </head>
-<body>
+<body>    
 <!--Home Section-->
-<header>
-    <section id="Home">
-        <h1>Welcome to my Online CV</h1>
-        <nav class="flex justify-center gap-4">
-            <a href="#Home" >Home</a>
+    <header>
+        <section id="Home">
+            <h1>Welcome to my Online CV</h1>
+            <nav id="nav-atas">
+                <a href="#Home" >Home</a>
+                <a href="#About-Me">About</a>
+                <a href="#Experience">Work Experience</a>
+                <a href="#Contact">Contact</a>
+            </nav>
+        </section>
+    </header>
+<div class="main-container">
+    <aside>
+        <nav id="side-nav">
+            <a href="#Home">Home</a>
+            <br />
             <a href="#About-Me">About</a>
-            <a href="#Portofolio">Portofolio</a>
+            <br />
+            <a href="#Experience">Work Experience</a>
+            <br />
             <a href="#Contact">Contact</a>
         </nav>
-    </section>
-</header>
-<!--About Me Section-->
-<main>
-<hr />
-    <section id="About-Me">
-        <h2>Hello friends, you can call me Adam!!</h2>
-<!-- using div to contain the image for more flexible crop -->
-        <div style="width: 100px; aspect-ratio: 1/1; overflow: hidden; border-radius: 50%; margin: 20px 0; ">
-        <img src="poto.jpg" alt="adam" style="transform: translateY(-15px);">
-        </div>
-        <p>Hi, my name is Christopher Adam Pandawa. I graduated from Bina Nusantara University, Majoring in Computer Engineering, and focusing in Robotics and Automation. I was graduated from Bina Nusantara University in 2007, with GPA of 3.36.</p>
-        <p>I like all about Technologies, I like watching Japanese Anime, and I like Photography/Videography.</p>
-        <p>I work as IT/Hardware Engineer, I usually handles Servers and IT Devices, Like Storage or San Switch. I do the Hardware Parts Replacements, and Fixing the Hardware Configuration. I'm currently looking for a Job, and attending a Full Stack Course in RevoU. </p>
-        <p>If you have a question or anything, feel free to <a href="#Contact">contact me.</a></p>
-            <nav>
-                <a href="#Home" >Back to top</a>
-            </nav>
-    </section>
-<hr />
-<!--Work Experience Section-->
-    <section id="Portofolio">
-        <h2>Work Experiences</h2>
-        <ol class="left-text">
-            <li><h3>PT Fortuna Informatika Nusantara - IT Support</h3>
-                <p>My first job was in PT Fortuna Informatika Nusantara. As an IT Support for Internal. I Managed the company laptop, installing the softwares, antivirus, managing E-Mail Server, Printer, Configuring the user network access with Mikrotik's Firewall, Configuring Network Switchs, and managing all other IT devices like CCTV, UPS, and PABX.</p>
-            </li>
-            <li><h3>PT IBM-Jasa Teknologi Informasi - Service Engineer</h3>
-                <p>I have a long experience as a Service Engineer in PT IBM-JTI, a sister company of IBM Indonesia. I'll go onsite on IBM's Customer's Site, all over Indonesia, fixing their IBM Products. Such as Servers, Storage, Tape Library, and SAN Switch.</p>
-            </li>
-            <li><h3>PT Klik Digital Sinergi - Service Engineer L2</h3>
-                <p>I also have experience on PT Klik Digital Sinergi, a Vendor for PT Telkomsel, as a Level 2 Service Engineer. I managed all the IT devices inside their Data Center in Jakarta and Serpong. Such as Servers, Storage, Tape Library and San Switch from various Brands. I also do the Preventive Maintenance on all of their devices on a three-monthly basis, Create the report, and presentation, and then scheduled a repair if needed.</p>
-            </li>
-            <li><h3>PT Gemilang Selaras Teknologi - Data Center Operation</h3>
-                <p>My last job was in Cikarang, as a Data Center Operation / Server Engineer in PT Gemilang Selaras Teknologi. A Vendor for PT Megaspeed Intl. a chinese based Company that provides an AI based Cloud service for Alibaba.</p>
-            </li>
-        </ol>
-            <nav>
-                <a href="#Home" >Back to top</a>
-            </nav>
-    </section>
-<hr />
-<!--Contact Me Section-->
-    <section id="Contact">
-        <h2>Contact Me</h2>
-        <p class="left-text">Hi, Please drop your question, Job Offer, Collaboration, or anything you want to say through this form:</p>
-<!--This form is left align-->
-            <fieldset class="left-text">
-                <form>
-<!--Name-->
-                    <label for="namex">Name</label>
-                        <br />
-                    <input
-                        id="namex"
-                        required
-                        name="name"
-                        type="text"
-                        placeholder="Masukan Nama Anda"
-                        />
-                        <br />
-<!--E-Mail-->
-                    <label for="emailx">Email</label>
-                        <br />
-                    <input
-                        id="emailx"
-                        required
-                        name="email"
-                        type="email"
-                        placeholder="email@ggg.com"
-                        />
-                        <br />
-<!--select-->
-                    <label for="reasonx">Reason for Contact</label>
-                        <br />
-                    <select id="reasonx" name="reason">
-                        <option disabled selected hidden>--please select a reason--</option>
-                        <optgroup label="Give Me Message">
-                        <option>I Have a Question</option>
-                        <option>I Have Suggestion</option>
-                        </optgroup>
-                        <optgroup label="Give Me a Job Offers">
-                        <option>IT Support/Engineer Work</option>
-                        <option>Photography/Videography</option>
-                        <option>Collaboration Offers</option>
-                        </optgroup>
-                    </select>
-                        <br />
-<!--checkbox-->
-                    <label>Preferred Contact Method</label>
-                        <br />
-                        <div>
-                            <input
-                                id="emailcheckx"                        
-                                name="opsi"
-                                type="checkbox"                    
-                                value="emailcheck"
-                                />
-                            <label for="emailcheckx">E-Mail</label>
-                            <input
-                                id="whatsappx"                        
-                                name="opsi"
-                                type="checkbox"                    
-                                value="whatsapps"
-                                />
-                            <label for="whatsappx">Whatsapp</label>
-                        </div>
-                        <br />
-<!--upload file-->
-                    <label for="filex">Upload File</label><br />
-                    <input
-                        id="filex"       
-                        name="file"
-                        type="file"
-                        /><br />
-<!--pesan-->
-                    <label for="pesanx">Messages</label>
-                        <br />
-                    <textarea
-                        id="pesanx"
-                        required
-                        name="pesan"
-                        cols="50"
-                        rows="5"
-                        placeholder="Write your messages here.."></textarea>
-                        <br />
-<!--button-->
-                    <button type="submit">
-                        Submit
-                    </button>
-                    <button type="reset">
-                        Reset
-                    </button>
-                        <br />
+    </aside>
+    <!--About Me Section-->
+    <main>
+    <hr />
+        <section id="About-Me" >
+            <h2>Hello friends, you can call me Adam!!</h2>
+    <!-- using div to contain the image for more flexible crop -->
+            <div class="about-container">
+                <div class="img-container">
+                <img src="./images/poto.jpg" width="100%" alt="adam" style="transform: translateY(-35px);">
+                </div>
+                <div class="paragraph-container">
+                    <p>Hi, my name is Christopher Adam Pandawa. I graduated from Bina Nusantara University, Majoring in Computer Engineering, and focusing in Robotics and Automation. I was graduated from Bina Nusantara University in 2007, with GPA of 3.36.</p>
+                    <p>I like all about Technologies, I like watching Japanese Anime, and I like Photography/Videography.</p>
+                    <p>I work as IT/Hardware Engineer, I usually handles Servers and IT Devices, Like Storage or San Switch. I do the Hardware Parts Replacements, and Fixing the Hardware Configuration. I'm currently looking for a Job, and attending a Full Stack Course in RevoU. </p>
+                    <p>If you have a question or anything, feel free to <a href="#Contact">contact me.</a></p>            
+                </div>
+            </div>
+        </section>
+    <hr />
+    <!--Work Experience Section-->
+        <section id="Experience">
+            <h2>Work Experiences</h2>
+            <ol class="left-text">
+                <li><h3>PT Fortuna Informatika Nusantara - IT Support</h3>
+                    <p>My first job was in PT Fortuna Informatika Nusantara. As an IT Support for Internal. I Managed the company laptop, installing the softwares, antivirus, managing E-Mail Server, Printer, Configuring the user network access with Mikrotik's Firewall, Configuring Network Switchs, and managing all other IT devices like CCTV, UPS, and PABX.</p>
+                </li>
+                <li><h3>PT IBM-Jasa Teknologi Informasi - Service Engineer</h3>
+                    <p>I have a long experience as a Service Engineer in PT IBM-JTI, a sister company of IBM Indonesia. I'll go onsite on IBM's Customer's Site, all over Indonesia, fixing their IBM Products. Such as Servers, Storage, Tape Library, and SAN Switch.</p>
+                </li>
+                <li><h3>PT Klik Digital Sinergi - Service Engineer L2</h3>
+                    <p>I also have experience on PT Klik Digital Sinergi, a Vendor for PT Telkomsel, as a Level 2 Service Engineer. I managed all the IT devices inside their Data Center in Jakarta and Serpong. Such as Servers, Storage, Tape Library and San Switch from various Brands. I also do the Preventive Maintenance on all of their devices on a three-monthly basis, Create the report, and presentation, and then scheduled a repair if needed.</p>
+                </li>
+                <li><h3>PT Gemilang Selaras Teknologi - Data Center Operation</h3>
+                    <p>My last job was in Cikarang, as a Data Center Operation / Server Engineer in PT Gemilang Selaras Teknologi. A Vendor for PT Megaspeed Intl. a chinese based Company that provides an AI based Cloud service for Alibaba.</p>
+                </li>
+            </ol>             
+        </section>
+    <hr />
+    <!--Contact Me Section-->
+        <section id="Contact">
+            <h2>Contact Me</h2>
+            <p>Hi, Please drop your question, Job Offer, Collaboration, or anything you want to say through this form:</p>
+    <!--This form is left align-->
+                <form action="#">
+                    <fieldset class="left-text">
+    <!--Name-->
+                        <label for="namex">Name</label>
+                            <br />
+                        <input
+                            id="namex"
+                            required
+                            name="name"
+                            type="text"
+                            placeholder="Masukan Nama Anda"
+                            />
+                            <br />
+    <!--E-Mail-->
+                        <label for="emailx">Email</label>
+                            <br />
+                        <input
+                            id="emailx"
+                            required
+                            name="email"
+                            type="email"
+                            placeholder="email@ggg.com"
+                            />
+                            <br />
+    <!--select-->
+                        <label for="reasonx">Reason for Contact</label>
+                            <br />
+                        <select id="reasonx" name="reason">
+                            <option disabled selected hidden>--please select a reason--</option>
+                            <optgroup label="Give Me Message">
+                            <option>I Have a Question</option>
+                            <option>I Have Suggestion</option>
+                            </optgroup>
+                            <optgroup label="Give Me a Job Offers">
+                            <option>IT Support/Engineer Work</option>
+                            <option>Photography/Videography</option>
+                            <option>Collaboration Offers</option>
+                            </optgroup>
+                        </select>
+                            <br />
+                            <br />
+    <!--checkbox-->
+                        <label>Preferred Contact Method</label>
+                            <br />
+                            <div>
+                                <input
+                                    id="emailcheckx"                        
+                                    name="opsi"
+                                    type="checkbox"                    
+                                    value="emailcheck"
+                                    />
+                                <label for="emailcheckx">E-Mail</label>
+                                <input
+                                    id="whatsappx"                        
+                                    name="opsi"
+                                    type="checkbox"                    
+                                    value="whatsapps"
+                                    />
+                                <label for="whatsappx">Whatsapp</label>
+                            </div>
+                            <br />
+    <!--upload file-->
+                        <label for="filex">Upload File</label><br />
+                        <input
+                            id="filex"       
+                            name="file"
+                            type="file"
+                            /><br />
+    <!--pesan-->
+                        <label for="pesanx">Messages</label>
+                            <br />
+                        <textarea
+                            id="pesanx"
+                            required
+                            name="pesan"
+                            cols="50"
+                            rows="5"
+                            placeholder="Write your messages here.."></textarea>
+                            <br />
+    <!--button-->
+                        <button type="submit">
+                            Submit
+                        </button>
+                        <button type="reset">
+                            Reset
+                        </button>
+                            <br />
+                    </fieldset>
                 </form>
-            </fieldset>
-            <nav>
-                <a href="#Home" >Back to top</a>
-            </nav>
-    </section>
-<hr />
-</main>
-<!--Footer Nav-->
-<footer>
-    <nav class="flex justify-center gap-4">
+        </section>
+    <hr />
+        <nav class="section">
+            <a href="#Home" class="back-to-top">Back to top</a>
+        </nav>
+    </main>
+</div>
+    <!--Footer Nav-->
+    <footer>
+        <nav id="nav-bawah">
             <a href="#Home" >Home</a>
             <a href="#About-Me">About</a>
-            <a href="#Portofolio">Portofolio</a>
+            <a href="#Experience">Work Experience</a>
             <a href="#Contact">Contact</a>
         </nav>
-    <br />
-    <div><i>-06 March 2026-</i></div>
-    <div><i>-Christopher Adam Pandawa-</i></div>
-</footer>
+        <br />
+        <div><i>-06 March 2026-</i></div>
+        <div><i>-Christopher Adam Pandawa-</i></div>
+    </footer>    
 </body>
 </html>
