@@ -1,10 +1,3 @@
-/* html {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-} */
-
 body {
     margin: 10px auto 0;
     display: flex;
@@ -25,7 +18,7 @@ body {
     background-blend-mode: overlay;
 }
 
-/* Main Container - terdapat aside dan main */
+/* Main Container - Contains aside and main */
 .main-container {
     display: flex;
     flex-direction: row;
@@ -87,7 +80,7 @@ section, .about-container {
     text-align: center;
 }
 
-/* Section:not(#Home) digunakan agar card background ter-apply ke header */
+/* Section:not(#Home) is used so the background card can be applied to header */
 section:not(#Home), header, #side-nav {
     background: linear-gradient(135deg, rgba(255, 168, 183, 0.4), rgba(128, 255, 128, 0.4));
     border: blue 2px solid;
@@ -115,7 +108,7 @@ section:not(#Home), header, #side-nav {
     width: 130px;
 }
 
-/* About Container - terdapat image dan paragraph */
+/* About Container - Contains image and paragraph */
 .about-container {
     display: flex;
     flex-direction: column;
@@ -130,6 +123,10 @@ section:not(#Home), header, #side-nav {
     border-radius: 20px;
     align-items: top;
     flex: 1;
+}
+#my-photo {
+    width: 100%;
+    transform: translateY(-35px);
 }
 .paragraph-container {
     flex: 3;

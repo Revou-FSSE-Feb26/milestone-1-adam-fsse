@@ -44,12 +44,13 @@ This site include the required 3 section, and also added some adjustment and add
   * I started with the Title, trying to be stylist and ended up just adding equal mark on the sides .
   * With Style and CSS I try to make the page with more consistent looks so it will looked similar trough different browser. So I define the body width, and make it center aligned. Thought later on, I made the *Form* in *Contact Me* section Left Aligned just because it looks better that way.
   so I defined the class here, and later used the attribute *class* on some tags.
-  * I made update on CSS. I add css tailwind script link, and add font link. But for now i used the internal CSS style to make it more easy, and planned it to change into Tailwind CSS later.
+  * I made update on CSS. I changed into external CSS, and add font link. I planned it to change into Tailwind CSS later.
   
 3. **Home Section, Page Title, and Navigation**
   * I used the *h1* tag for the title, as the home section works as the page's title, also it contain the navigation feature, I also added the navigation feature at the *footer* to make it easy to navigate from the end of the page.
   * Inside the *nav* tag, I used a *table* tag to make it more organized and easier to set the spacing later, but it turned out to be more complicated, and i decided to leave it for now.
   * And then I used the labels for ID-ing the *a href* tag for the navigation links.
+  * I made update and adding the side navigation links, also removed the 'Back to Top' link on each section and made it into a fixed link that scroll together with the screen.
   
 4. **About Me and Portofolio Section**
   * Here I just used a simple *Paragraph* tag, and style the sub-title with *h2* and *h3*.
@@ -75,22 +76,47 @@ This site include the required 3 section, and also added some adjustment and add
             flex-direction: column;
             align-items: center;
   ```
-* And then wrap it under *html* to center the whole *body*.
-* I used *margin*, *width*, *text-align*, etc to make the layout looks good.
-* i also defined the *background-color*, and using *background-repeat* to apply a background image. I used *background-blend-mode: overlay;* to blend the pattern with the background color.
-* As i defined the CSS Tailwind I need to redefine the *h1,h2,h3* I used this to style and color the *h1,h2,h3* also.
+* I used *margin*, *max-width*, *width*, *text-align*, etc to make the layout looks good.
+* I used *display:flex* and *flex-direction:column* on the body to layout the section.
+* There is *header*, *main*, and *footer* section.
+* Inside the *main* section there is the 'side navigation' and the 'main' parts.
+* In which the 'main' part is divided into the 3 required section of 'about me', 'work experience', and 'contact me'.
+* The 'about me' section is divided into an images and the pharagraph.
+* I defined the *background-color*, and using *background-repeat* to apply a background image. I used *background-blend-mode: overlay;* to blend the pattern with the background color.
+* I styled the section to act as a background-card that would emphasize each section more. I used gradient color here.
 * I fixed the table for *nav* that I used before, and changed it into *display: flex;*.
+* I styled the 'back to top' and 'side navigation' links.
 * I also use the *hover* to make the navigation more appealing.
 * I restyle the *Ordered List* and customize the list marker.
 * I make the *fieldset* more enggaging, and style it like a real sheet of form.
 * I also styled the other component on *Contact* section like *input*, *label*, *button*, and *textarea*.
-* I using the media query for mobile, tablet, and desktop view. The query is based on screen width, *max-width: 480px* is mobile, *max-width: 1024px* with *min-width: 481px* is for tablet, and *min-width: 1025px* for desktop. I changed the font size for each media queries.
+* I using the media query for mobile, tablet, and desktop view. The query is based on screen width, *max-width: 640px* is mobile, *min-width: 641px* is for tablet, and *min-width: 1025px* for desktop.
+* I changed the font size for each media queries. I also controlled the visibility of the navigation links and side navigation links, and managed which nav should appears on which *media query*.
 7. **Profile Picture**
-* I added my photo. I put it inside a *div* wrapper. And used the option *overflow: hidden;* and *transform: translateY(-15px);* to better croped the photo into a circle frame.
+* I added my photo. I put it inside a *div* wrapper. And used the option *overflow: hidden;* and *transform: translateY(-35px);* to better croped the photo into a rounded square frame.
+* I wrapped the photo and the about me pharagraph into a *flex* and change the *flex-direction* depending on the *media query*.
+8. **Flex Structure**
+* Desktop display:
+```
+[-------------header---------------]
+[ [       ] [ [photo] [about me] ] ] -- about-container: flex:row
+[ [sidenav] [  Work Experience   ] ] - main-container
+[ [       ] [     Contact Me     ] ]
+[-------------footer---------------]
+```
+* Mobile display:
+```
+[-------header------]
+[ [  [  photo ]   ] ] -- about-container: flex:column
+[ [  [about me]   ] ] -- sidenav: display:none
+[ [Work Experience] ] - main-container
+[ [  Contact Me   ] ]
+[------footer-------]
+```
 
-8. **Others**
+9. **Others**
   * I added my Name and Date at the end of the page.
-  * I used *div* tag to put the *class* attribute for center-aligned the *body* section.
+  * I keep the tailwind *script src* as a comment for further development.
  
 
 ### How To Access

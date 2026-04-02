@@ -6,11 +6,11 @@
     <title>= ADAM CV =</title>
 <!--using tailwind and google font-->
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+<!--CSS-->
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<!--CSS-->
-    
 </head>
+
 <body>    
 <!--Home Section-->
     <header>
@@ -36,15 +36,15 @@
             <a href="#Contact">Contact</a>
         </nav>
     </aside>
-    <!--About Me Section-->
+<!--About Me Section-->
     <main>
     <hr />
         <section id="About-Me" >
             <h2>Hello friends, you can call me Adam!!</h2>
-    <!-- using div to contain the image for more flexible crop -->
+<!-- using div to contain the image for more flexible crop -->
             <div class="about-container">
                 <div class="img-container">
-                <img src="./images/poto.jpg" width="100%" alt="adam" style="transform: translateY(-35px);">
+                <img id="my-photo" src="./images/photo.jpg" alt="adam">
                 </div>
                 <div class="paragraph-container">
                     <p>Hi, my name is Christopher Adam Pandawa. I graduated from Bina Nusantara University, Majoring in Computer Engineering, and focusing in Robotics and Automation. I was graduated from Bina Nusantara University in 2007, with GPA of 3.36.</p>
@@ -55,7 +55,7 @@
             </div>
         </section>
     <hr />
-    <!--Work Experience Section-->
+<!--Work Experience Section-->
         <section id="Experience">
             <h2>Work Experiences</h2>
             <ol class="left-text">
@@ -74,14 +74,14 @@
             </ol>             
         </section>
     <hr />
-    <!--Contact Me Section-->
+<!--Contact Me Section-->
         <section id="Contact">
             <h2>Contact Me</h2>
             <p>Hi, Please drop your question, Job Offer, Collaboration, or anything you want to say through this form:</p>
-    <!--This form is left align-->
+<!--This form is left align-->
                 <form action="#">
                     <fieldset class="left-text">
-    <!--Name-->
+<!--Name-->
                         <label for="namex">Name</label>
                             <br />
                         <input
@@ -92,7 +92,7 @@
                             placeholder="Masukan Nama Anda"
                             />
                             <br />
-    <!--E-Mail-->
+<!--E-Mail-->
                         <label for="emailx">Email</label>
                             <br />
                         <input
@@ -103,7 +103,7 @@
                             placeholder="email@ggg.com"
                             />
                             <br />
-    <!--select-->
+<!--select-->
                         <label for="reasonx">Reason for Contact</label>
                             <br />
                         <select id="reasonx" name="reason">
@@ -120,7 +120,7 @@
                         </select>
                             <br />
                             <br />
-    <!--checkbox-->
+<!--checkbox-->
                         <label>Preferred Contact Method</label>
                             <br />
                             <div>
@@ -140,14 +140,14 @@
                                 <label for="whatsappx">Whatsapp</label>
                             </div>
                             <br />
-    <!--upload file-->
+<!--upload file-->
                         <label for="filex">Upload File</label><br />
                         <input
                             id="filex"       
                             name="file"
                             type="file"
                             /><br />
-    <!--pesan-->
+<!--pesan-->
                         <label for="pesanx">Messages</label>
                             <br />
                         <textarea
@@ -158,7 +158,7 @@
                             rows="5"
                             placeholder="Write your messages here.."></textarea>
                             <br />
-    <!--button-->
+<!--button-->
                         <button type="submit">
                             Submit
                         </button>
@@ -175,7 +175,7 @@
         </nav>
     </main>
 </div>
-    <!--Footer Nav-->
+<!--Footer Nav-->
     <footer>
         <nav id="nav-bawah">
             <a href="#Home" >Home</a>
